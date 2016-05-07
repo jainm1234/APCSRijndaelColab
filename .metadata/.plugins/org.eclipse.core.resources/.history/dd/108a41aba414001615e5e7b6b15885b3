@@ -1,0 +1,17 @@
+package main;
+
+public interface RijndaelMethods {
+
+	
+	
+	void RoundKey();
+
+	void SubBytes();
+
+	void ShiftRows();
+
+	void MixColumns();
+
+	
+	
+}

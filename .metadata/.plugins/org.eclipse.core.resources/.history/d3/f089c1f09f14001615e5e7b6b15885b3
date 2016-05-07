@@ -1,0 +1,24 @@
+package tsd.crypto.algoritm;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		
+		
+		String textClar = "Algoritmul de criptare AES";
+		//AES
+		String k = "1a25s8fe5dsg65ad";
+		System.out.println("Text clar: "+textClar);
+		byte[] enc = AES.encrypt(textClar.getBytes(), k.getBytes());
+		System.out.println("Text criptat AES: "+new String(enc));
+
+		byte[] dec = AES.decrypt(enc, k.getBytes());
+		System.out.println("Text decriptat AES: "+new String(dec));
+		System.out.println("------------------");
+	}
+
+}
